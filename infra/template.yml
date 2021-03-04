@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Secure EC2 instance that can access the internet
+
+Resources:
+  AwesomeEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-0947d2ba12ee1ff75"
+      InstanceType: "t2.micro"
+      Tags:
+        - Key: "Name"
+          Value: "AwesomeEC2Instance"
+        - Key: "Owner"
+          Value: "Ali"
